@@ -51,6 +51,8 @@ namespace InnorikDemo
                 c.RoutePrefix = "swagger";
             });
 
+            app.UseCors();
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
