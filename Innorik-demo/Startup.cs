@@ -32,6 +32,7 @@ namespace InnorikDemo
             services.AddDbContext<InnorikDbContext>(options => 
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped<IBookService, BookService>();
+            services.AddSwaggerGen();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,6 +42,14 @@ namespace InnorikDemo
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Innorik API v1");
+                c.RoutePrefix = "swagger";
+            });
 
             app.UseHttpsRedirection();
 

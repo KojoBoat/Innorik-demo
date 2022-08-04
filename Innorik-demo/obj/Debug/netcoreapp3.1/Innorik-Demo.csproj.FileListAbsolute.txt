@@ -93,7 +93,11 @@ C:\Users\User\Documents\Innorik\Innorik-demo\Innorik-demo\bin\Debug\netcoreapp3.
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik-demo\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik-demo\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik-demo\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\User\Documents\Innorik\Innorik-demo\Innorik-demo\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik-demo\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\User\Documents\Innorik\Innorik-demo\Innorik-demo\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\User\Documents\Innorik\Innorik-demo\Innorik-demo\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\User\Documents\Innorik\Innorik-demo\Innorik-demo\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik-demo\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik-demo\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik-demo\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
@@ -113,6 +117,7 @@ C:\Users\User\Documents\Innorik\Innorik-demo\Innorik-demo\obj\Debug\netcoreapp3.
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik-demo\obj\Debug\netcoreapp3.1\Innorik-Demo.AssemblyInfoInputs.cache
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik-demo\obj\Debug\netcoreapp3.1\Innorik-Demo.AssemblyInfo.cs
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik-demo\obj\Debug\netcoreapp3.1\Innorik-Demo.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\Innorik\Innorik-demo\Innorik-demo\obj\Debug\netcoreapp3.1\Innorik-Demo.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik-demo\obj\Debug\netcoreapp3.1\Innorik-Demo.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik-demo\obj\Debug\netcoreapp3.1\staticwebassets\Innorik-Demo.StaticWebAssets.Manifest.cache
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik-demo\obj\Debug\netcoreapp3.1\Innorik-Demo.RazorTargetAssemblyInfo.cache

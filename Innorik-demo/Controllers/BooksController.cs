@@ -47,7 +47,7 @@ namespace Innorik_demo.Controllers
             var addBook = await bookService.CreateBookAsync(book);
             if (addBook != null)
             {
-                return CreatedAtRoute("GetBookByName", new { book.BookName }, book);
+                return Created("GetBookByName", book);
             }
             return BadRequest(book);
         }
@@ -70,7 +70,7 @@ namespace Innorik_demo.Controllers
             var result = await bookService.UpdateBookAsync(book);
             if (result != null)
             {
-                return CreatedAtRoute("GetBookByName", new {book.Id}, book);
+                return Created("GetBookByName", book);
             }
             return NotFound(book);
         }
