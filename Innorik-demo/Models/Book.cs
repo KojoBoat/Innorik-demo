@@ -1,4 +1,6 @@
-﻿namespace InnorikDemo.Models
+﻿using System;
+
+namespace InnorikDemo.Models
 {
     public class Book
     {

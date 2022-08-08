@@ -1,3 +1,8 @@
+C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\obj\Debug\netcoreapp3.1\Innorik.Test.csproj.AssemblyReference.cache
+C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\obj\Debug\netcoreapp3.1\Innorik.Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\obj\Debug\netcoreapp3.1\Innorik.Test.AssemblyInfoInputs.cache
+C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\obj\Debug\netcoreapp3.1\Innorik.Test.AssemblyInfo.cs
+C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\obj\Debug\netcoreapp3.1\Innorik.Test.csproj.CoreCompileInputs.cache
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\bin\Debug\netcoreapp3.1\Innorik-Demo.deps.json
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\bin\Debug\netcoreapp3.1\Innorik-Demo.runtimeconfig.json
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\bin\Debug\netcoreapp3.1\Innorik-Demo.runtimeconfig.dev.json
@@ -13,6 +18,8 @@ C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\bin\Debug\netcoreapp3.
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\bin\Debug\netcoreapp3.1\Innorik.Test.dll
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\bin\Debug\netcoreapp3.1\Innorik.Test.pdb
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\bin\Debug\netcoreapp3.1\Hellang.Authentication.JwtBearer.Google.dll
+C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
@@ -139,11 +146,6 @@ C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\bin\Debug\netcoreapp3.
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\bin\Debug\netcoreapp3.1\Innorik-Demo.dll
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\bin\Debug\netcoreapp3.1\Innorik-Demo.pdb
-C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\obj\Debug\netcoreapp3.1\Innorik.Test.csproj.AssemblyReference.cache
-C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\obj\Debug\netcoreapp3.1\Innorik.Test.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\obj\Debug\netcoreapp3.1\Innorik.Test.AssemblyInfoInputs.cache
-C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\obj\Debug\netcoreapp3.1\Innorik.Test.AssemblyInfo.cs
-C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\obj\Debug\netcoreapp3.1\Innorik.Test.csproj.CoreCompileInputs.cache
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\obj\Debug\netcoreapp3.1\Innorik.Test.csproj.CopyComplete
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\obj\Debug\netcoreapp3.1\Innorik.Test.dll
 C:\Users\User\Documents\Innorik\Innorik-demo\Innorik.Test\obj\Debug\netcoreapp3.1\Innorik.Test.pdb

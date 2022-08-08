@@ -1,6 +1,8 @@
 ﻿using InnorikDemo.Data;
 using InnorikDemo.Models;
 using InnorikDemo.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -8,17 +10,19 @@ using System.Threading.Tasks;
 
 namespace Innorik_demo.Controllers
 {
-    [Route("api/v1/[controller]")]
+    //[Authorize]
+    [EnableCors("MyPolicy")]
+    [Route("")]
     [ApiController]
     public class BooksController : ControllerBase
     {
         private readonly IBookService bookService;
         public BooksController(IBookService bookService)
         {
-            this.bookService = bookService ?? throw new ArgumentNullException(nameof(bookService));
+            this.bookService = bookService;
         }
 
-        [HttpGet]
+        [HttpGet("[Controller]")]
         public async Task<ActionResult<IEnumerable<Book>>> GetAllBooks()
         {
             var result = await bookService.GetBooksAsync();
@@ -29,7 +33,7 @@ namespace Innorik_demo.Controllers
             return Ok(result);
         }
 
-        [HttpGet("{name}", Name = "GetBookByName")]
+        [HttpGet("[Controller]/{name}")]
         public async Task<ActionResult<Book>> GetBookByName(string name)
         {
             var result = await bookService.GetBookByName(name);
@@ -41,18 +45,18 @@ namespace Innorik_demo.Controllers
             return Ok(result);
         }
 
-        [HttpPost]
+        [HttpPost("[Controller]")]
         public async Task<ActionResult<Book>> AddBook(Book book)
         {
             var addBook = await bookService.CreateBookAsync(book);
             if (addBook != null)
             {
-                return Created("GetBookByName", book);
+                return Ok(addBook);
             }
             return BadRequest(book);
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("[Controller]/{id}")]
         public async Task<ActionResult<Book>> DeleteBookById(int id)
         {
             var result = await bookService.DeleteBookAsync(id);
@@ -64,7 +68,7 @@ namespace Innorik_demo.Controllers
             return Ok(result);
         }
 
-        [HttpPut]
+        [HttpPut("[Controller]")]
         public async Task<ActionResult<Book>> UpdateBook(Book book)
         {
             var result = await bookService.UpdateBookAsync(book);

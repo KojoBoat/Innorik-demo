@@ -88,7 +88,7 @@ namespace Innorik.Test
             var mockBooks = new List<Book> {
                 Mock.Of<Book>(book => book.Id == 1 && book.BookName == "Test-Name"
                 && book.Category == "Test-Category" && book.Description == "Test Description" && book.Price == 45),
-        };
+            };
             var mockBookController = new BooksController(mockBookService.Object);
             mockBookService.Setup(s => s.DeleteBookAsync(It.IsAny<int>())).Returns(Task.FromResult(mockBooks[0]));
 
@@ -113,6 +113,63 @@ namespace Innorik.Test
             var actual = await mockBookController.DeleteBookById(bookId);
 
             Assert.IsType<NotFoundObjectResult>(actual.Result);
+        }
+
+        [Fact]
+        public async void UpdateBook_Success()
+        {
+            var bookToUpdate = Mock.Of<Book>(x => x.Id == 1 && x.BookName == "Test Name" && x.Description == "Test Description" 
+            && x.Category == "Test Category" && x.Price == 35);
+
+            var contentToUpdate = Mock.Of<Book>(x => x.Id == 1 && x.BookName == "Test Name 2" && x.Description == "Test Description 2"
+            && x.Category == "Test Category" && x.Price == 35);
+            mockBookService.Setup(x => x.UpdateBookAsync(It.IsAny<Book>())).Returns(Task.FromResult(contentToUpdate));
+
+            var mockBookController = new BooksController(mockBookService.Object);
+            var result = await mockBookController.UpdateBook(bookToUpdate);
+
+            Assert.NotNull(result);
+            Assert.Equal(bookToUpdate.Id, contentToUpdate.Id);
+        }
+
+        [Fact]
+        public async void UpdateBook_Failure()
+        {
+            var bookToUpate = Mock.Of<Book>(x => x.Id == 1 && x.BookName == "Test Name" && x.Description == "Test Description"
+            && x.Category == "Test Category" && x.Price == 35);
+            mockBookService.Setup(x => x.UpdateBookAsync(It.IsAny<Book>())).Returns(Task.FromResult<Book>(null));
+
+            var mockBookController = new BooksController(mockBookService.Object);
+            var actual = await mockBookController.DeleteBookById(bookToUpate.Id);
+
+            Assert.IsType<NotFoundObjectResult>(actual.Result);
+        }
+
+        [Fact]
+        public async void CreateBook_Success()
+        {
+            var bookToCreate = Mock.Of<Book>(x => x.BookName == "TestName" && x.Description == "Test Description"
+            && x.Category == "Test Categpry" && x.Price == 36);
+
+            var mockOrder = new List<Book>
+            {
+                Mock.Of<Book>(book => book.BookName == "Test Book 1" && book.Price == 25 && book.Category == "Test Category"
+                && book.Description == "Test Description" && book.Id == 1),
+                Mock.Of<Book>(book => book.BookName == "Test Book 2" && book.Price == 35 && book.Category == "Test Category 2"
+                && book.Description == "Test Description 2" && book.Id == 2),
+                bookToCreate
+            };
+
+            mockBookService.Setup(x => x.CreateBookAsync(It.IsAny<Book>())).Returns(Task.FromResult(bookToCreate));
+            mockBookService.Setup(y => y.GetBooksAsync()).ReturnsAsync(mockOrder);
+
+            var mockBookController = new BooksController(mockBookService.Object);
+
+            var result = await mockBookController.AddBook(bookToCreate);
+            var addToCollection = await mockBookController.GetAllBooks();
+
+            Assert.Contains(bookToCreate, mockOrder);
+            mockBookService.Verify(x => x.CreateBookAsync(bookToCreate));
         }
     }
 }
